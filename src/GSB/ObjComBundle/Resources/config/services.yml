@@ -1,0 +1,4 @@
+services:
+#    gsb_obj_com.example:
+#        class: GSB\ObjComBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

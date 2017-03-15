@@ -1,0 +1,10 @@
+{% extends "GSBObjComBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }} - Ajout d'une Pharmacie
+{% endblock %}
+{% block gsbobjcom_body %}
+    <h2>
+        Ajout d'une Pharmacie
+    </h2>
+    {{ include ('GSBObjComBundle:Pharmacie:formulaire.html.twig') }}
+{% endblock %}

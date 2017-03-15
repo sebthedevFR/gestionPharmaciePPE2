@@ -1,0 +1,19 @@
+{% extends "GSBObjComBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }} - Consultation d'une pharmacie
+{% endblock %}
+{% block gsbobjcom_body %}
+    <h2>
+        Caractéristiques du produit numéro {{ leProduit.id }}
+    </h2>
+    <p>
+        nom: {{ leProduit.libelle }}</br>
+        prix: {{ leProduit.prix }} €
+    </p>
+    <p>
+        <a href="{{ path('gsb_obj_com_prod_aff_liste') }}" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i>Retour à la liste</a>
+    </p>
+    <p>
+
+    </p>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "GSBObjComBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }} - Suppression d'une pharmacie
+{% endblock %}
+{% block gsbobjcom_body %}
+    <h2>
+        Suppression de la pharmacie numéro {{ laPharm.id }}
+    </h2>
+    <p>
+        Etes vous certain de vouloir supprimer la pharmacie qui s'appelle : {{ laPharm.nom }}
+    </p>
+    <form action="{{ path('gsb_obj_com_pharm_supprimer',{'id':laPharm.id}) }}" method="post">
+        <input type="submit" value="Supprimer" />
+    </form>
+    <a href="{{ path('gsb_obj_com_pharm_aff_unepharmacie',{'id':laPharm.id}) }}">
+        Annulation de la suppression
+    </a>
+
+{% endblock %}

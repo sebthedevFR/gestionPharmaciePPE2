@@ -1,0 +1,16 @@
+{% extends "GSBObjComBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }} - Ajout d'une Pharmacie
+{% endblock %}
+{% block gsbobjcom_body %}
+    <h2>
+        Ajout d'une Pharmacie
+    </h2>
+    {{ include ('GSBObjComBundle:Pharmacie:formulaire.html.twig') }}
+
+    <p>
+        <a href="{{ path('gsb_obj_com_pharm_aff_unepharmacie',{'id':laPharm.id}) }}">
+            Annulation de la modification: Retour à la pharmacie.
+        </a>
+    </p>
+{% endblock %}

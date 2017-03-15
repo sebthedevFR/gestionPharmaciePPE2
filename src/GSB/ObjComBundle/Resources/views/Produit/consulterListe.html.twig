@@ -1,0 +1,20 @@
+
+{% extends "GSBObjComBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }} - Liste des pharmacies
+{% endblock %}
+{% block gsbobjcom_body %}
+    <h2>
+        Liste des produit
+    </h2>
+
+    <ul>
+        {% for prod in lesProduits %}
+            <li>
+                <a href="{{ path('gsb_obj_com_prod_aff_unproduit', {'id': prod.id}) }}">{{ prod.libelle }}</a>
+            </li>
+        {% else %}
+            <li>Pas de produit</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

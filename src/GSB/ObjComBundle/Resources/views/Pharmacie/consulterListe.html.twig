@@ -1,0 +1,21 @@
+
+{% extends "GSBObjComBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }} - Liste des pharmacies
+{% endblock %}
+{% block gsbobjcom_body %}
+    <h2>
+        Liste des pharmacies
+    </h2>
+
+    <ul>
+        {% for pharm in lesPharmacies %}
+            <li>
+                <a href="{{ path('gsb_obj_com_pharm_aff_unepharmacie', {'id': pharm.id}) }}">{{ pharm.nom }}</a>
+                située à {{ pharm.ville }}
+            </li>
+        {% else %}
+            <li>Pas de pharmacies</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,62 @@
+gsb_obj_com_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: GSBObjComBundle:Default:index }
+
+gsb_obj_com_bienvenue:
+    path: /bienvenue
+    defaults: { _controller: GSBObjComBundle:Default:bienvenue }
+
+
+gsb_obj_com_bienvenue_perso:
+    path: /bienvenue/{name}/{secondname}
+    defaults: { _controller: GSBObjComBundle:Default:bienvenueperso }
+
+
+
+
+
+gsb_obj_com_accueil:
+    path: /
+    defaults: { _controller: GSBObjComBundle:Pharmacie:index }
+
+gsb_obj_com_pharm_aff_liste:
+    path: /pharm/liste
+    defaults: { _controller: GSBObjComBundle:Pharmacie:afficherListe }
+
+gsb_obj_com_pharm_ajouter:
+    path: /pharm/ajout
+    defaults: { _controller: GSBObjComBundle:Pharmacie:ajouter }
+
+gsb_obj_com_pharm_aff_unepharmacie:
+    path: /pharm/{id}
+    defaults: { _controller: GSBObjComBundle:Pharmacie:afficherPharmacie, id: 1 }
+    requirements:
+        id: \d+
+
+gsb_obj_com_pharm_modifier:
+    path: /pharm/modif/{id}
+    defaults: { _controller: GSBObjComBundle:Pharmacie:modifier }
+    requirements:
+        id: \d+
+
+gsb_obj_com_pharm_supprimer:
+    path: /pharm/suppres/{id}
+    defaults: { _controller: GSBObjComBundle:Pharmacie:supprimer }
+
+gsb_obj_com_pharm_rechercher:
+    path: /pharm/rech/{annee}/{ville}.{typefichier}
+    defaults: { _controller: GSBObjComBundle:Pharmacie:rechercher }
+    requirements:
+        annee: \d{4}
+        typefichier: html|xml
+        ville: "[a-zA-Z]]{3,12}"
+
+
+
+gsb_obj_com_prod_aff_liste:
+    path: /prod/liste
+    defaults: { _controller: GSBObjComBundle:Produit:afficherListe }
+
+gsb_obj_com_prod_aff_unproduit:
+    path: /prod/{id}
+    defaults: { _controller: GSBObjComBundle:Produit:afficherProduit, id: 1 }

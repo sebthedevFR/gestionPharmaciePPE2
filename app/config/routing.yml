@@ -1,0 +1,7 @@
+gsb_obj_com:
+    resource: "@GSBObjComBundle/Resources/config/routing.yml"
+    prefix:   /objcom
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

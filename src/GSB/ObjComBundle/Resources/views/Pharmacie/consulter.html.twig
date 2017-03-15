@@ -1,0 +1,24 @@
+{% extends "GSBObjComBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }} - Consultation d'une pharmacie
+{% endblock %}
+{% block gsbobjcom_body %}
+    <h2>
+        Caractéristiques de la pharmacie numéro {{ laPharmacie.id }}
+    </h2>
+    <p>
+        nom: {{ laPharmacie.nom }} </br>
+        située à {{ laPharmacie.ville }}
+    </p>
+    <p>
+        <a href="{{ path('gsb_obj_com_pharm_aff_liste') }}" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i>Retour à la liste</a>
+    </p>
+    <p>
+        <a href="{{ path('gsb_obj_com_pharm_modifier',{'id':laPharmacie.id}) }}" class="btn btn-default"><i class="glyphicon glyphicon-edit"></i>
+            Modifier la pharmacie.
+        </a>
+        <a href="{{ path('gsb_obj_com_pharm_supprimer',{'id':laPharmacie.id}) }}" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i>
+            Supprimer la pharmacie.
+        </a>
+    </p>
+{% endblock %}
