@@ -54,8 +54,6 @@ class PharmacieController extends Controller
             //la demande est de type POST
             //Récupération des informations saisies dans le formulaire
             //Et creation de la pharmacie dans la base de données
-            //!!! code a venir !!!
-
             // On crée un objet instance de pharmacie
             $unePharm = new Pharmacie();
             $nom = $this->get('request')->request->get('nom');
@@ -67,7 +65,7 @@ class PharmacieController extends Controller
             // si la cache à cocher client est cochée l'attrivut client de l'objet
             // ^$unePharm contiendra true, sinon l'attribut contiendra false
             $checkbox = $this->get('request')->request->get('client');
-            if ($checkbox == "true")
+            if ($checkbox = 1)
             {
                 $unePharm->setClient(1);
             }
@@ -100,6 +98,7 @@ class PharmacieController extends Controller
         {
             //la commande est de type get
             //on retourne la vue ajouter qui contiendras le formulaire
+
             return $this->render('GSBObjComBundle:Pharmacie:ajouter.html.twig');
 
         }
@@ -139,9 +138,6 @@ class PharmacieController extends Controller
             // ^$unePharm contiendra true, sinon l'attribut contiendra false
             $checkbox = $this->get('request')->request->get('client');
 
-
-            // query builder
-
             // On récupére le service EntityManager géré par le service Doctrine
             $em = $this->getDoctrine()->getManager();
             $pharm = $em->getRepository('GSBObjComBundle:Pharmacie')->find($id);
@@ -152,7 +148,7 @@ class PharmacieController extends Controller
             }
             $pharm->setNom($nom);
             $pharm->setVille($ville);
-            if ($checkbox == "true")
+            if ($checkbox = 1)
             {
                 $pharm->setClient(1);
             }
