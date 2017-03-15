@@ -76,4 +76,5 @@ class PharmacieRepository extends EntityRepository
         // exécution de la requête et le retour du resultat
         return $qb->getQuery()->getResult();
     }
+
 }

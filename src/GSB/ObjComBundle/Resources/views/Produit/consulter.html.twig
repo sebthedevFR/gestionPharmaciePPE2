@@ -7,13 +7,18 @@
         Caractéristiques du produit numéro {{ leProduit.id }}
     </h2>
     <p>
-        nom: {{ leProduit.libelle }}</br>
+        nom: {{ leProduit.libelle }} </br>
         prix: {{ leProduit.prix }} €
     </p>
     <p>
         <a href="{{ path('gsb_obj_com_prod_aff_liste') }}" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i>Retour à la liste</a>
     </p>
     <p>
-
+        <a href="{{ path('gsb_obj_com_prod_modifier',{'id':leProduit.id}) }}" class="btn btn-default"><i class="glyphicon glyphicon-edit"></i>
+            Modifier le produit.
+        </a>
+        <a href="{{ path('gsb_obj_com_prod_supprimer',{'id':leProduit.id}) }}" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i>
+            Supprimer la pharmacie.
+        </a>
     </p>
 {% endblock %}

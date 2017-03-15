@@ -93,6 +93,8 @@ class PharmacieController extends Controller
             // récup de l'id de la pharm
             $url = $this->get('router')->generate('gsb_obj_com_pharm_aff_unepharmacie',array('id'=>$unePharm->getId()));
             return new RedirectResponse($url);
+
+
         }
         else
         {
@@ -136,7 +138,7 @@ class PharmacieController extends Controller
 
             // si la cache à cocher client est cochée l'attrivut client de l'objet
             // ^$unePharm contiendra true, sinon l'attribut contiendra false
-            $checkbox = $this->get('request')->request->get('client');
+            //$checkbox = $this->get('request')->request->get('client');
 
             // On récupére le service EntityManager géré par le service Doctrine
             $em = $this->getDoctrine()->getManager();
@@ -148,7 +150,8 @@ class PharmacieController extends Controller
             }
             $pharm->setNom($nom);
             $pharm->setVille($ville);
-            if ($checkbox = 1)
+
+            if (isset($_POST['client']))
             {
                 $pharm->setClient(1);
             }
@@ -202,6 +205,7 @@ class PharmacieController extends Controller
             //!!! code a venir !!!
             $em = $this->getDoctrine()->getManager();
             $pharmacieRepo = $em->getRepository('GSBObjComBundle:Pharmacie')->find($id);
+
             $em->remove($pharmacieRepo);
             $em->flush();
 
@@ -213,6 +217,7 @@ class PharmacieController extends Controller
             // !!! code à venir !!
             $url = $this->get('router')->generate('gsb_obj_com_pharm_aff_unepharmacie',array('id'=>$id));
             return $this->redirectToRoute('gsb_obj_com_pharm_aff_liste');
+
         }
         else
         {

@@ -1,20 +1,3 @@
-gsb_obj_com_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: GSBObjComBundle:Default:index }
-
-gsb_obj_com_bienvenue:
-    path: /bienvenue
-    defaults: { _controller: GSBObjComBundle:Default:bienvenue }
-
-
-gsb_obj_com_bienvenue_perso:
-    path: /bienvenue/{name}/{secondname}
-    defaults: { _controller: GSBObjComBundle:Default:bienvenueperso }
-
-
-
-
-
 gsb_obj_com_accueil:
     path: /
     defaults: { _controller: GSBObjComBundle:Pharmacie:index }
@@ -51,12 +34,24 @@ gsb_obj_com_pharm_rechercher:
         typefichier: html|xml
         ville: "[a-zA-Z]]{3,12}"
 
-
-
 gsb_obj_com_prod_aff_liste:
     path: /prod/liste
     defaults: { _controller: GSBObjComBundle:Produit:afficherListe }
 
+gsb_obj_com_prod_ajouter_produit:
+    path: /prod/ajout
+    defaults: { _controller: GSBObjComBundle:Produit:ajouterProduit }
+
 gsb_obj_com_prod_aff_unproduit:
     path: /prod/{id}
     defaults: { _controller: GSBObjComBundle:Produit:afficherProduit, id: 1 }
+
+gsb_obj_com_prod_modifier:
+    path: /prod/modif/{id}
+    defaults: { _controller: GSBObjComBundle:Produit:modifier }
+    requirements:
+        id: \d+
+
+gsb_obj_com_prod_supprimer:
+    path: /prod/suppres/{id}
+    defaults: { _controller: GSBObjComBundle:Produit:supprimer }

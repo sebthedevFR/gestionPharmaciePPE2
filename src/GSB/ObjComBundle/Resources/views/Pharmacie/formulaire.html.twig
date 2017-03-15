@@ -17,7 +17,7 @@
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <div class="checkbox" name="client">
-                        <label><input type="checkbox"{% if laPharm.id is defined %}{% if laPharm.client == 1 %} checked {% endif %}{% endif %}>Client</label>
+                        <label><input type="checkbox" name="client"{% if laPharm.id is defined %}{% if laPharm.client == 1 %} checked {% endif %}{% endif %}>Client</label>
                     </div>
                 </div>
             </div>
