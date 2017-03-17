@@ -3,13 +3,6 @@
     {{ parent() }} - Modification d'une pharmacie
 {% endblock %}
 {% block gsbobjcom_body %}
-    <h2>
-        Modification de la pharmacie numéro {{ laPharm.id }}
-    </h2>
+    <h2>Modification de la pharmacie numéro {{ laPharm.id }}</h2>
     {{ include ('GSBObjComBundle:Pharmacie:formulaire.html.twig') }}
-    <p>
-        <a href="{{ path('gsb_obj_com_pharm_aff_unepharmacie',{'id':laPharm.id}) }}">
-            Annulation de la modification: Retour à la pharmacie.
-        </a>
-    </p>
 {% endblock %}

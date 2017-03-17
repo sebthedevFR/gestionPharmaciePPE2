@@ -4,18 +4,88 @@
     {{ parent() }} - Liste des pharmacies
 {% endblock %}
 {% block gsbobjcom_body %}
-    <h2>
-        Liste des pharmacies
-    </h2>
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>Liste des Pharmacies</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Ville</th>
+                        <th>Date d'ajout</th>
+                    </tr>
+                    </thead>
+                    {% for pharm in lesPharmacies %}
+                        <tbody>
+                        <tr>
+                            <td><a href="{{ path('gsb_obj_com_pharm_aff_unepharmacie', {'id': pharm.id}) }}">{{ pharm.nom }}</a></td>
+                            <td>{{ pharm.ville }}</td>
+                            <td>{{ pharm.dateajout|date('d-m-Y') }}</td>
+                        </tr>
+                        </tbody>
+                    {% else %}
+                        <td>Pas de pharmacie</td>
+                    {% endfor %}
+                </table>
+                <a href="{{ path('gsb_obj_com_pharm_ajouter') }}" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign"></i> Ajouter une Pharmacie</a>
+            </div>
+        </div>
 
-    <ul>
-        {% for pharm in lesPharmacies %}
-            <li>
-                <a href="{{ path('gsb_obj_com_pharm_aff_unepharmacie', {'id': pharm.id}) }}">{{ pharm.nom }}</a>
-                située à {{ pharm.ville }}
-            </li>
-        {% else %}
-            <li>Pas de pharmacies</li>
-        {% endfor %}
-    </ul>
+
+    <div id="googleMap" style="width:400px;height:400px;"></div>
+    <script>
+
+
+
+
+
+
+
+
+        function myMap() {
+
+
+            geocoder = new google.maps.Geocoder();
+            var myLatLng = {lat: -25.363, lng: 131.044};
+
+            var mapProp= {
+                center: myLatLng,
+                zoom:5
+            };
+
+            map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
+
+            {% for pharm in lesPharmacies %}
+            var laVille = "{{ pharm.ville }}";
+            codeAddress(laVille);//call the function
+            {% endfor %}
+
+
+
+        }
+
+        function codeAddress(address)
+        {
+            geocoder.geocode( {address:address}, function(results, status)
+            {
+                if (status == google.maps.GeocoderStatus.OK)
+                {
+                    map.setCenter(results[0].geometry.location);//center the map over the result
+                    //place a marker at the location
+                    var marker = new google.maps.Marker(
+                            {
+                                map: map,
+                                position: results[0].geometry.location
+                            });
+                } else {
+                    alert('Geocode was not successful for the following reason: ' + status);
+                }
+            });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXNz0fxnGPtbwWk13M8cVE4DN2NqbpQEA&callback=myMap"></script>
 {% endblock %}

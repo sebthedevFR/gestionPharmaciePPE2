@@ -4,17 +4,31 @@
     {{ parent() }} - Liste des pharmacies
 {% endblock %}
 {% block gsbobjcom_body %}
+    <div class="col-lg-6">
     <h2>
-        Liste des produit
+        Liste des produits
     </h2>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>Libelle</th>
+                <th>Prix</th>
+            </tr>
+            </thead>
+            {% for prod in lesProduits %}
+                <tbody>
+                <tr>
+                    <td><a href="{{ path('gsb_obj_com_prod_aff_unproduit', {'id': prod.id}) }}">{{ prod.libelle }}</a></td>
+                    <td>{{ prod.prix }} €</td>
+                </tr>
+                </tbody>
+            {% else %}
+                <td>Pas de produit</td>
+            {% endfor %}
+        </table>
+        </div>
+        <a href="{{ path('gsb_obj_com_prod_ajouter_produit') }}" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign"></i> Ajouter un produit</a>
+    </div>
 
-    <ul>
-        {% for prod in lesProduits %}
-            <li>
-                <a href="{{ path('gsb_obj_com_prod_aff_unproduit', {'id': prod.id}) }}">{{ prod.libelle }}</a>
-            </li>
-        {% else %}
-            <li>Pas de produit</li>
-        {% endfor %}
-    </ul>
 {% endblock %}

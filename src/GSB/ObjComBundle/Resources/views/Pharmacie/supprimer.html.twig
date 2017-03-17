@@ -7,13 +7,13 @@
         Suppression de la pharmacie numéro {{ laPharm.id }}
     </h2>
     <p>
-        Etes vous certain de vouloir supprimer la pharmacie qui s'appelle : {{ laPharm.nom }}
+        Etes vous certain de vouloir supprimer la pharmacie qui s'appelle : {{ laPharm.nom }} ?
     </p>
+
     <form action="{{ path('gsb_obj_com_pharm_supprimer',{'id':laPharm.id}) }}" method="post">
-        <input type="submit" value="Supprimer" />
+        <a href="{{ path('gsb_obj_com_pharm_aff_unepharmacie',{'id':laPharm.id}) }}" class="btn btn-primary"><i class="glyphicon glyphicon-chevron-left"></i>Retour à la pharmacie</a>
+        <input class="btn btn-danger" type="submit" value="Supprimer" />
     </form>
-    <a href="{{ path('gsb_obj_com_pharm_aff_unepharmacie',{'id':laPharm.id}) }}">
-        Annulation de la suppression
-    </a>
+
 
 {% endblock %}

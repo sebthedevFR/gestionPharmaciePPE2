@@ -3,22 +3,68 @@
     {{ parent() }} - Consultation d'une pharmacie
 {% endblock %}
 {% block gsbobjcom_body %}
-    <h2>
-        Caractéristiques de la pharmacie numéro {{ laPharmacie.id }}
-    </h2>
-    <p>
-        nom: {{ laPharmacie.nom }} </br>
-        située à {{ laPharmacie.ville }}
-    </p>
-    <p>
-        <a href="{{ path('gsb_obj_com_pharm_aff_liste') }}" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i>Retour à la liste</a>
-    </p>
-    <p>
-        <a href="{{ path('gsb_obj_com_pharm_modifier',{'id':laPharmacie.id}) }}" class="btn btn-default"><i class="glyphicon glyphicon-edit"></i>
-            Modifier la pharmacie.
-        </a>
-        <a href="{{ path('gsb_obj_com_pharm_supprimer',{'id':laPharmacie.id}) }}" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i>
-            Supprimer la pharmacie.
-        </a>
-    </p>
+
+
+
+
+
+
+    <div class="col-lg-6">
+        <h2>
+            Caractéristiques de la pharmacie numéro {{ laPharmacie.id }}
+        </h2>
+            <h3>Nom: {{ laPharmacie.nom }}</h3>
+            <h3>Ville: {{ laPharmacie.ville }}</h3>
+            <a href="{{ path('gsb_obj_com_pharm_aff_liste') }}" class="btn btn-primary"><i class="glyphicon glyphicon-chevron-left"></i>Retour à la liste</a>
+            <a href="{{ path('gsb_obj_com_pharm_modifier',{'id':laPharmacie.id}) }}" class="btn btn-info"><i class="glyphicon glyphicon-edit"></i>Modifier la pharmacie.</a>
+            <a href="{{ path('gsb_obj_com_pharm_supprimer',{'id':laPharmacie.id}) }}" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i>Supprimer la pharmacie.</a>
+        </p>
+    </div>
+    <div class="col-lg-6" id="googleMap" style="width:400px;height:400px;"></div>
+    <script>
+        var laVille = "{{ laPharmacie.ville }}";
+
+        function myMap() {
+
+            geocoder = new google.maps.Geocoder();
+            var myLatLng = {lat: -25.363, lng: 131.044};
+
+            var mapProp= {
+                center: myLatLng,
+                zoom:10
+            };
+
+            map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            codeAddress(laVille);//call the function
+
+            marker = new google.maps.Marker({
+                map: map,
+                draggable: false,
+                animation: google.maps.Animation.DROP,
+                position: myLatLng
+            });
+            marker.addListener('click', toggleBounce);
+        }
+
+        function codeAddress(address)
+        {
+            geocoder.geocode( {address:address}, function(results, status)
+            {
+                if (status == google.maps.GeocoderStatus.OK)
+                {
+                    map.setCenter(results[0].geometry.location);//center the map over the result
+                    //place a marker at the location
+                    var marker = new google.maps.Marker(
+                            {
+                                map: map,
+                                position: results[0].geometry.location
+                            });
+                } else {
+                    alert('Geocode was not successful for the following reason: ' + status);
+                }
+            });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXNz0fxnGPtbwWk13M8cVE4DN2NqbpQEA&callback=myMap"></script>
 {% endblock %}

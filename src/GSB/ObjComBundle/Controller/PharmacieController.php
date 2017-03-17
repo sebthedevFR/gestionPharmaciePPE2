@@ -13,17 +13,22 @@ use GSB\ObjComBundle\Entity\Pharmacie;
 class PharmacieController extends Controller
 {
 
-
-    //public function indexAction($name)
-    //{
-    //    return $this->render('GSBObjComBundle:Default:index.html.twig', array('name' => $name));
-    //}
-
-
-
     public function indexAction()
     {
-        return $this->render('GSBObjComBundle:Pharmacie:index.html.twig');
+        // récupération de la liste des pharmacies
+        // --------------
+        $repository = $this->getDoctrine()->getManager()->getRepository('GSBObjComBundle:Pharmacie');
+        $listPharmacie=$repository->findAll();
+        $nbrPharm = count($listPharmacie);
+
+        // récupération de la liste des produits
+        // --------------
+        $repository = $this->getDoctrine()->getManager()->getRepository('GSBObjComBundle:Produit');
+        $listProduit=$repository->findAll();
+        $nbrProd = count($listProduit);
+
+
+        return $this->render('GSBObjComBundle:Pharmacie:index.html.twig', array('nbrPharm'=>$nbrPharm, 'nbrProd'=>$nbrProd));
 
     }
     public function afficherListeAction()
@@ -34,11 +39,6 @@ class PharmacieController extends Controller
 
 
         $listPharmacie=$repository->findAll();
-
-        //$listPharmacie = $repository->toutesLesPharmacies();
-
-
-        //$listPharmacie = $this->obtenirListePharmacie();
 
         // On demande à la vue d'afficher la liste des pharmacies.
 
