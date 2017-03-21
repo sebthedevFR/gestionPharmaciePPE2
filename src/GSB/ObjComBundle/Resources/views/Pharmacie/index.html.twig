@@ -58,4 +58,56 @@
             </div>
 
         </div>
+    <div id="googleMap" style="width:400px;height:400px;"></div>
+    <script>
+
+        function myMap() {
+
+
+            geocoder = new google.maps.Geocoder();
+            var myLatLng = {lat: -25.363, lng: 131.044};
+
+            var mapProp= {
+                center: myLatLng,
+                zoom:5
+            };
+
+            map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
+
+            {% for pharm in lesPharmacies %}
+            var laVille = "{{ pharm.ville }}";
+            codeAddress(laVille);//call the function
+            {% endfor %}
+
+
+
+        }
+
+        function codeAddress(address)
+        {
+
+            geocoder.geocode( {address:address}, function(results, status)
+            {
+                if (status == google.maps.GeocoderStatus.OK)
+                {
+
+                    map.setCenter(results[0].geometry.location);//center the map over the result
+                    //place a marker at the location
+                    var marker = new google.maps.Marker(
+                            {
+                                map: map,
+                                position: results[0].geometry.location,
+                                animation: google.maps.Animation.DROP,
+                                icon: 'http://i.imgur.com/CpKJM2K.png'
+
+                            });
+                } else {
+                    alert('Geocode was not successful for the following reason: ' + status);
+                }
+            });
+        }
+    </script>
+
 {% endblock %}

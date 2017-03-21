@@ -9,6 +9,9 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 
 use GSB\ObjComBundle\Entity\Pharmacie;
+use GSB\ObjComBundle\Entity\Image;
+
+use Doctrine\Common\Collections\ArrayCollection;
 
 class PharmacieController extends Controller
 {
@@ -21,6 +24,7 @@ class PharmacieController extends Controller
         $listPharmacie=$repository->findAll();
         $nbrPharm = count($listPharmacie);
 
+
         // récupération de la liste des produits
         // --------------
         $repository = $this->getDoctrine()->getManager()->getRepository('GSBObjComBundle:Produit');
@@ -28,7 +32,7 @@ class PharmacieController extends Controller
         $nbrProd = count($listProduit);
 
 
-        return $this->render('GSBObjComBundle:Pharmacie:index.html.twig', array('nbrPharm'=>$nbrPharm, 'nbrProd'=>$nbrProd));
+        return $this->render('GSBObjComBundle:Pharmacie:index.html.twig', array('nbrPharm'=>$nbrPharm, 'nbrProd'=>$nbrProd, 'lesPharmacies'=>$listPharmacie));
 
     }
     public function afficherListeAction()
@@ -62,6 +66,15 @@ class PharmacieController extends Controller
             $unePharm->setVille($ville);
 
 
+            $uneImage = new Image();
+            $url = $this->get('request')->request->get('url');
+            $uneImage->setUrl($url);
+            $alt = $this->get('request')->request->get('alt');
+            $uneImage->setAlt($alt);
+
+            $unePharm->setImage($uneImage);
+
+
             // si la cache à cocher client est cochée l'attrivut client de l'objet
             // ^$unePharm contiendra true, sinon l'attribut contiendra false
             $checkbox = $this->get('request')->request->get('client');
@@ -85,7 +98,7 @@ class PharmacieController extends Controller
             $em->flush();
 
             // affichage d'une message flash pour indiquer que la pharmacie à bien était ajoutée
-            $this->addFlash('success','l\'article a bien été ajouté');
+            $this->get('session')->getFlashBag()->add('notice','well done');
             
             //On rvers la page de visualisation de la page crée
             // lid de la pharmacie est en dure à 6
@@ -150,6 +163,24 @@ class PharmacieController extends Controller
             }
             $pharm->setNom($nom);
             $pharm->setVille($ville);
+
+
+            if ($pharm->getImage() == null)
+            {
+                $uneImage = new Image();
+            }
+            else
+            {
+                $idImage = $pharm->getImage()->getId();
+                $uneImage = $em->getRepository('GSBObjComBundle:Image')->find($idImage);
+            }
+
+            $url = $this->get('request')->request->get('url');
+            $uneImage->setUrl($url);
+            $alt = $this->get('request')->request->get('alt');
+            $uneImage->setAlt($alt);
+
+            $pharm->setImage($uneImage);
 
             if (isset($_POST['client']))
             {

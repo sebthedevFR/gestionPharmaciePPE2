@@ -3,6 +3,8 @@
 namespace GSB\ObjComBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints\DateTime;
+
 
 /**
  * Pharmacie
@@ -52,6 +54,20 @@ class Pharmacie
      *
      * @return integer 
      */
+
+    /**
+     * @ORM\OneToOne(targetEntity="GSB\ObjComBundle\Entity\Image", cascade={"persist"})
+     */
+    private $image;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="GSB\ObjComBundle\Entity\Categorie", cascade={"persist"})
+     */
+    private $categories;
+
+
+
+    
     public function getId()
     {
         return $this->id;
@@ -126,12 +142,57 @@ class Pharmacie
         return $this->dateajout;
     }
 
-    /**
-     * CONSTRUCTEUR DU TP*/
-    public function construct()
+    public function __construct()
     {
         $this->dateajout = new \DateTime();
     }
 
 
+
+
+    /**
+     * Set client
+     *
+     * @param boolean $client
+     * @return Pharmacie
+     */
+    public function setClient($client)
+    {
+        $this->client = $client;
+
+        return $this;
+    }
+
+    /**
+     * Get client
+     *
+     * @return boolean 
+     */
+    public function getClient()
+    {
+        return $this->client;
+    }
+
+    /**
+     * Set image
+     *
+     * @param \GSB\ObjComBundle\Entity\Image $image
+     * @return Pharmacie
+     */
+    public function setImage(Image $image = null)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return \GSB\ObjComBundle\Entity\Image 
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
 }

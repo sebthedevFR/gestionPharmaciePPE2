@@ -3,22 +3,15 @@
     {{ parent() }} - Consultation d'une pharmacie
 {% endblock %}
 {% block gsbobjcom_body %}
-    <h2>
-        Caractéristiques du produit numéro {{ leProduit.id }}
-    </h2>
-    <p>
-        nom: {{ leProduit.libelle }} </br>
-        prix: {{ leProduit.prix }} €
-    </p>
-    <p>
-        <a href="{{ path('gsb_obj_com_prod_aff_liste') }}" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i>Retour à la liste</a>
-    </p>
-    <p>
-        <a href="{{ path('gsb_obj_com_prod_modifier',{'id':leProduit.id}) }}" class="btn btn-default"><i class="glyphicon glyphicon-edit"></i>
-            Modifier le produit.
-        </a>
-        <a href="{{ path('gsb_obj_com_prod_supprimer',{'id':leProduit.id}) }}" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i>
-            Supprimer la pharmacie.
-        </a>
-    </p>
+    <div class="col-lg-6">
+        <h2>
+            Caractéristiques de du produit numéro {{ leProduit.id }}
+        </h2>
+        <h3>Nom: {{ leProduit.libelle }}</h3>
+        <h3>Prix: {{ leProduit.prix }} €</h3>
+        <a href="{{ path('gsb_obj_com_prod_aff_liste') }}" class="btn btn-primary"><i class="glyphicon glyphicon-chevron-left"></i>Retour à la liste</a>
+        <a href="{{ path('gsb_obj_com_prod_modifier',{'id':leProduit.id}) }}" class="btn btn-info"><i class="glyphicon glyphicon-edit"></i>Modifier le produit.</a>
+        <a href="{{ path('gsb_obj_com_prod_supprimer',{'id':leProduit.id}) }}" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i>Supprimer le produit.</a>
+        </p>
+    </div>
 {% endblock %}

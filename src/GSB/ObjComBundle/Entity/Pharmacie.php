@@ -2,6 +2,7 @@
 
 namespace GSB\ObjComBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints\DateTime;
 
@@ -54,6 +55,20 @@ class Pharmacie
      *
      * @return integer 
      */
+
+    /**
+     * @ORM\OneToOne(targetEntity="GSB\ObjComBundle\Entity\Image", cascade={"persist"})
+     */
+    private $image;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="GSB\ObjComBundle\Entity\Categorie", cascade={"persist"})
+     */
+    private $categories;
+
+
+
+    
     public function getId()
     {
         return $this->id;
@@ -131,6 +146,7 @@ class Pharmacie
     public function __construct()
     {
         $this->dateajout = new \DateTime();
+        $this->categories = new ArrayCollection();
     }
 
 
@@ -157,5 +173,61 @@ class Pharmacie
     public function getClient()
     {
         return $this->client;
+    }
+
+    /**
+     * Set image
+     *
+     * @param \GSB\ObjComBundle\Entity\Image $image
+     * @return Pharmacie
+     */
+    public function setImage(Image $image = null)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return \GSB\ObjComBundle\Entity\Image 
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * Add categories
+     *
+     * @param \GSB\ObjComBundle\Entity\Categorie $categories
+     * @return Pharmacie
+     */
+    public function addCategory(\GSB\ObjComBundle\Entity\Categorie $categories)
+    {
+        $this->categories[] = $categories;
+
+        return $this;
+    }
+
+    /**
+     * Remove categories
+     *
+     * @param \GSB\ObjComBundle\Entity\Categorie $categories
+     */
+    public function removeCategory(\GSB\ObjComBundle\Entity\Categorie $categories)
+    {
+        $this->categories->removeElement($categories);
+    }
+
+    /**
+     * Get categories
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCategories()
+    {
+        return $this->categories;
     }
 }

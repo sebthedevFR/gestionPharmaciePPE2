@@ -4,6 +4,7 @@
     {{ parent() }} - Liste des pharmacies
 {% endblock %}
 {% block gsbobjcom_body %}
+
     <div class="row">
         <div class="col-lg-6">
             <h2>Liste des Pharmacies</h2>
@@ -69,16 +70,21 @@
 
         function codeAddress(address)
         {
+
             geocoder.geocode( {address:address}, function(results, status)
             {
                 if (status == google.maps.GeocoderStatus.OK)
                 {
+
                     map.setCenter(results[0].geometry.location);//center the map over the result
                     //place a marker at the location
                     var marker = new google.maps.Marker(
                             {
                                 map: map,
-                                position: results[0].geometry.location
+                                position: results[0].geometry.location,
+                                animation: google.maps.Animation.DROP,
+                                icon: 'http://i.imgur.com/CpKJM2K.png'
+
                             });
                 } else {
                     alert('Geocode was not successful for the following reason: ' + status);

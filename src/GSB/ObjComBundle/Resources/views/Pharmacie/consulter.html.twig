@@ -4,22 +4,21 @@
 {% endblock %}
 {% block gsbobjcom_body %}
 
-
-
-
-
-
     <div class="col-lg-6">
         <h2>
             Caractéristiques de la pharmacie numéro {{ laPharmacie.id }}
         </h2>
             <h3>Nom: {{ laPharmacie.nom }}</h3>
             <h3>Ville: {{ laPharmacie.ville }}</h3>
+            {% if laPharmacie.image.id is defined %}
+                <img class="img-circle" width="250" height="200" src="{{ laPharmacie.image.url }}" alt="{{ laPharmacie.image.alt }}">;
+            {% endif %}
             <a href="{{ path('gsb_obj_com_pharm_aff_liste') }}" class="btn btn-primary"><i class="glyphicon glyphicon-chevron-left"></i>Retour à la liste</a>
             <a href="{{ path('gsb_obj_com_pharm_modifier',{'id':laPharmacie.id}) }}" class="btn btn-info"><i class="glyphicon glyphicon-edit"></i>Modifier la pharmacie.</a>
             <a href="{{ path('gsb_obj_com_pharm_supprimer',{'id':laPharmacie.id}) }}" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i>Supprimer la pharmacie.</a>
         </p>
     </div>
+
     <div class="col-lg-6" id="googleMap" style="width:400px;height:400px;"></div>
     <script>
         var laVille = "{{ laPharmacie.ville }}";
@@ -36,14 +35,6 @@
 
             map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
             codeAddress(laVille);//call the function
-
-            marker = new google.maps.Marker({
-                map: map,
-                draggable: false,
-                animation: google.maps.Animation.DROP,
-                position: myLatLng
-            });
-            marker.addListener('click', toggleBounce);
         }
 
         function codeAddress(address)
@@ -57,7 +48,10 @@
                     var marker = new google.maps.Marker(
                             {
                                 map: map,
-                                position: results[0].geometry.location
+                                position: results[0].geometry.location,
+                                animation: google.maps.Animation.DROP,
+                                icon: 'http://i.imgur.com/CpKJM2K.png'
+
                             });
                 } else {
                     alert('Geocode was not successful for the following reason: ' + status);

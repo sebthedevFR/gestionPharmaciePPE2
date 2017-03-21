@@ -5,15 +5,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Controller/PharmacieController.php" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Controller/PharmacieController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Pharmacie.php" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Pharmacie.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/ajouter.html.twig" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/ajouter.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulter.html.twig" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulter.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulterListe.html.twig" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulterListe.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/formulaire.html.twig" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/formulaire.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/index.html.twig" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/menuDernPharmacie.html.twig" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/menuDernPharmacie.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/modifier.html.twig" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/modifier.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/supprimer.html.twig" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/supprimer.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/consulterListe.html.twig" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/consulterListe.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/consulter.html.twig" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/consulter.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/formulaire.html.twig" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/formulaire.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/layout.html.twig" />
     </list>
     <ignored path="gestionpharmacie.iws" />
@@ -43,116 +42,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="modifier.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/modifier.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PharmacieController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PharmacieController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Controller/PharmacieController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="193" column="0" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+            <state relative-caret-position="404">
+              <caret line="171" column="16" selection-start-line="171" selection-start-column="16" selection-end-line="171" selection-end-column="16" />
               <folding>
                 <element signature="e#47#104#0#PHP" expanded="true" />
-                <element signature="e#347#1047#0#PHP" expanded="false" />
-                <element signature="e#532#559#1#PHP" expanded="true" />
-                <element signature="e#800#825#1#PHP" expanded="true" />
-                <element signature="e#944#987#0#PHP" expanded="true" />
-                <element signature="e#1052#1522#0#PHP" expanded="false" />
-                <element signature="e#1245#1272#1#PHP" expanded="true" />
-                <element signature="e#1527#3862#0#PHP" expanded="false" />
-                <element signature="e#3867#4436#0#PHP" expanded="false" />
-                <element signature="e#4176#4203#1#PHP" expanded="true" />
-                <element signature="e#4441#7395#0#PHP" expanded="false" />
-                <element signature="e#5732#5759#1#PHP" expanded="true" />
-                <element signature="e#7400#9195#0#PHP" expanded="false" />
-                <element signature="e#8075#8102#1#PHP" expanded="true" />
-                <element signature="e#9200#9731#0#PHP" expanded="false" />
-                <element signature="e#9736#10298#0#PHP" expanded="false" />
-                <element signature="e#10303#11255#0#PHP" expanded="false" />
-                <element signature="e#10953#10980#1#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/bootstrap.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7698">
-              <caret line="4" column="75321" selection-start-line="4" selection-start-column="75321" selection-end-line="4" selection-end-column="75321" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PharmacieRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Repository/PharmacieRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="e#303#485#0#PHP" expanded="false" />
-                <element signature="e#491#704#0#PHP" expanded="false" />
-                <element signature="e#710#1049#0#PHP" expanded="false" />
-                <element signature="e#1055#1325#0#PHP" expanded="false" />
-                <element signature="e#1331#1589#0#PHP" expanded="false" />
-                <element signature="e#1595#1829#0#PHP" expanded="false" />
-                <element signature="e#1836#2433#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consulter.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulter.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="157" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="157" />
-              <folding>
-                <element signature="e#967#1000#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consulterListe.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/consulterListe.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-              <folding>
-                <element signature="e#908#940#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="supprimer.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/supprimer.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="95" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consulterListe.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulterListe.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="30" />
-              <folding>
-                <element signature="e#750#784#0#Twig" expanded="true" />
-                <element signature="e#1198#1223#0#Twig" expanded="true" />
-                <element signature="e#1386#1419#0#HTML" expanded="true" />
+                <element signature="e#432#1166#0#PHP" expanded="false" />
+                <element signature="e#1171#1641#0#PHP" expanded="false" />
+                <element signature="e#6643#6666#1#PHP" expanded="true" />
+                <element signature="e#8357#10152#0#PHP" expanded="false" />
+                <element signature="e#10157#10688#0#PHP" expanded="false" />
+                <element signature="e#10693#11255#0#PHP" expanded="false" />
+                <element signature="e#11260#12212#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -168,13 +71,98 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Suivi.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Suivi.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="79" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Categorie.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Categorie.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consulterListe.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulterListe.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="94" column="0" selection-start-line="36" selection-start-column="4" selection-end-line="94" selection-end-column="0" />
+              <folding>
+                <element signature="e#13#46#0#Twig" expanded="false" />
+                <element signature="e#751#785#0#Twig" expanded="false" />
+                <element signature="e#1199#1224#0#Twig" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consulter.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulter.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="134" selection-start-line="13" selection-start-column="134" selection-end-line="13" selection-end-column="134" />
+              <folding>
+                <element signature="e#12#45#0#Twig" expanded="false" />
+                <element signature="e#630#657#0#Twig" expanded="false" />
+                <element signature="e#788#814#0#Twig" expanded="false" />
+                <element signature="e#961#988#0#Twig" expanded="false" />
+                <element signature="e#1220#2581#0#HTML" expanded="false" />
+                <marker date="1490121747389" expanded="true" signature="133:2724" ph="{% block gsbobjcom_body ...%}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Image.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Image.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-383">
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pharmacie.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Pharmacie.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2059">
+              <caret line="154" column="7" selection-start-line="154" selection-start-column="7" selection-end-line="154" selection-end-column="7" />
+              <folding>
+                <element signature="e#43#91#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="formulaire.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/formulaire.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+            <state relative-caret-position="442">
+              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
               <folding>
-                <element signature="e#1369#1396#0#Twig" expanded="true" />
+                <element signature="e#2206#2233#0#Twig" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modifier.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/modifier.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+              <folding>
+                <element signature="e#12#45#0#Twig" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -199,30 +187,31 @@
         <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Default/bienvenueperso.html.twig" />
         <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/formulaire.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Pharmacie.php" />
         <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/ajouter.html.twig" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/consulter.html.twig" />
-        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/formulaire.html.twig" />
         <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/modifier.html.twig" />
         <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/supprimer.html.twig" />
         <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Controller/ProduitController.php" />
         <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Repository/PharmacieRepository.php" />
         <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/menuDernPharmacie.html.twig" />
-        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Controller/PharmacieController.php" />
-        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/ajouter.html.twig" />
-        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/formulaire.html.twig" />
         <option value="$PROJECT_DIR$/web/css/sb-admin.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/web/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulterListe.html.twig" />
-        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulter.html.twig" />
         <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/modifier.html.twig" />
         <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/supprimer.html.twig" />
         <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/consulterListe.html.twig" />
+        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/formulaire.html.twig" />
+        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/consulter.html.twig" />
+        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/ajouter.html.twig" />
+        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulterListe.html.twig" />
+        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulter.html.twig" />
+        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/formulaire.html.twig" />
+        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Suivi.php" />
+        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Pharmacie.php" />
+        <option value="$PROJECT_DIR$/src/GSB/ObjComBundle/Controller/PharmacieController.php" />
       </list>
     </option>
   </component>
@@ -264,6 +253,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -306,24 +296,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gestionPharmaciePPE2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gestionPharmaciePPE2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -377,40 +349,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gestionPharmaciePPE2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gestionPharmaciePPE2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GSB" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ObjComBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Produit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -500,7 +438,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Repository" />
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -566,16 +504,33 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gestionPharmaciePPE2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gestionPharmaciePPE2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PPESymfony" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -648,6 +603,9 @@
       <workItem from="1489569211374" duration="5959000" />
       <workItem from="1489577590953" duration="11613000" />
       <workItem from="1489672602124" duration="16718000" />
+      <workItem from="1489745814148" duration="7080000" />
+      <workItem from="1489760923966" duration="1790000" />
+      <workItem from="1490088304294" duration="16329000" />
     </task>
     <task id="LOCAL-00001" summary="Bouton Ajouter &amp; Modifier de Pharmacie">
       <created>1489586152900</created>
@@ -660,7 +618,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88480000" />
+    <option name="totallyTimeSpent" value="113679000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,9 +631,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26681367" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27508268" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -713,61 +671,16 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="24" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulter.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="140" selection-start-line="19" selection-start-column="140" selection-end-line="19" selection-end-column="140" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/modifier.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/supprimer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulterListe.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="86" selection-start-line="31" selection-start-column="86" selection-end-line="31" selection-end-column="86" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1313#1332#0#Twig" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1716#1735#0#Twig" expanded="true" />
-            <element signature="e#1885#1912#0#Twig" expanded="true" />
-            <element signature="e#2065#2091#0#Twig" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -777,23 +690,14 @@
           <caret line="192" column="106" selection-start-line="192" selection-start-column="93" selection-end-line="192" selection-end-column="106" />
           <folding>
             <element signature="e#47#104#0#PHP" expanded="true" />
-            <element signature="e#347#1047#0#PHP" expanded="false" />
-            <element signature="e#532#559#1#PHP" expanded="true" />
-            <element signature="e#800#825#1#PHP" expanded="true" />
-            <element signature="e#944#987#0#PHP" expanded="true" />
-            <element signature="e#1052#1522#0#PHP" expanded="false" />
-            <element signature="e#1245#1272#1#PHP" expanded="true" />
-            <element signature="e#1527#3862#0#PHP" expanded="false" />
-            <element signature="e#3867#4436#0#PHP" expanded="false" />
-            <element signature="e#4176#4203#1#PHP" expanded="true" />
-            <element signature="e#4441#7395#0#PHP" expanded="false" />
-            <element signature="e#5732#5759#1#PHP" expanded="true" />
-            <element signature="e#7400#9195#0#PHP" expanded="false" />
-            <element signature="e#8075#8102#1#PHP" expanded="true" />
-            <element signature="e#9200#9731#0#PHP" expanded="false" />
-            <element signature="e#9736#10298#0#PHP" expanded="false" />
-            <element signature="e#10303#11255#0#PHP" expanded="false" />
-            <element signature="e#10953#10980#1#PHP" expanded="true" />
+            <element signature="e#1171#1641#0#PHP" expanded="false" />
+            <element signature="e#1646#4271#0#PHP" expanded="false" />
+            <element signature="e#4276#4845#0#PHP" expanded="false" />
+            <element signature="e#4850#8352#0#PHP" expanded="false" />
+            <element signature="e#8357#10152#0#PHP" expanded="false" />
+            <element signature="e#10157#10688#0#PHP" expanded="false" />
+            <element signature="e#10693#11255#0#PHP" expanded="false" />
+            <element signature="e#11260#12212#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -818,7 +722,7 @@
         <state relative-caret-position="119">
           <caret line="7" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#1369#1396#0#Twig" expanded="true" />
+            <element signature="e#2206#2233#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -827,7 +731,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="140" selection-start-line="19" selection-start-column="140" selection-end-line="19" selection-end-column="140" />
-          <folding />
+          <folding>
+            <element signature="e#12#45#0#Twig" expanded="false" />
+            <element signature="e#630#657#0#Twig" expanded="false" />
+            <element signature="e#788#814#0#Twig" expanded="false" />
+            <element signature="e#961#988#0#Twig" expanded="false" />
+            <element signature="e#1220#2581#0#HTML" expanded="false" />
+            <marker date="1490121747389" expanded="true" signature="133:2724" ph="{% block gsbobjcom_body ...%}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -835,7 +746,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#12#45#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -850,7 +763,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#13#46#0#Twig" expanded="false" />
+            <element signature="e#751#785#0#Twig" expanded="false" />
+            <element signature="e#1199#1224#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -875,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="134" selection-start-line="20" selection-start-column="134" selection-end-line="20" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -890,28 +800,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/formulaire.twig" />
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -926,73 +815,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Pharmacie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="114" column="5" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
-          <folding>
-            <element signature="e#43#75#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/ajouter.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="e#12#45#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/consulter.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/formulaire.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="105" selection-start-line="19" selection-start-column="105" selection-end-line="19" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/modifier.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Controller/ProduitController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2788">
-          <caret line="182" column="12" selection-start-line="182" selection-start-column="12" selection-end-line="182" selection-end-column="12" />
-          <folding>
-            <element signature="e#285#618#0#PHP" expanded="false" />
-            <element signature="e#623#1177#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,18 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="108" selection-start-line="4" selection-start-column="108" selection-end-line="4" selection-end-column="108" />
-          <folding>
-            <element signature="e#86#120#0#Twig" expanded="false" />
-            <marker date="1489672846692" expanded="true" signature="10:231" ph="{% for pharm in lesPharmacies ...%}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,19 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="48" />
-          <folding>
-            <element signature="e#12#45#0#Twig" expanded="true" />
-            <element signature="e#1058#1085#0#Twig" expanded="true" />
-            <element signature="e#2359#2385#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,22 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="605">
           <caret line="144" column="15" selection-start-line="144" selection-start-column="15" selection-end-line="144" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1313#1332#0#Twig" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1716#1735#0#Twig" expanded="true" />
-            <element signature="e#1885#1912#0#Twig" expanded="true" />
-            <element signature="e#2065#2091#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1070,15 +854,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7698">
+        <state relative-caret-position="68">
           <caret line="4" column="75321" selection-start-line="4" selection-start-column="75321" selection-end-line="4" selection-end-column="75321" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,29 +880,225 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Controller/PharmacieController.php">
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/supprimer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="95" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/ajouter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/consulter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/formulaire.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/consulterListe.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="10" selection-start-line="6" selection-start-column="4" selection-end-line="31" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="193" column="0" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+          <caret line="20" column="134" selection-start-line="20" selection-start-column="134" selection-end-line="20" selection-end-column="134" />
           <folding>
-            <element signature="e#47#104#0#PHP" expanded="true" />
-            <element signature="e#347#1047#0#PHP" expanded="false" />
-            <element signature="e#532#559#1#PHP" expanded="true" />
-            <element signature="e#800#825#1#PHP" expanded="true" />
-            <element signature="e#944#987#0#PHP" expanded="true" />
-            <element signature="e#1052#1522#0#PHP" expanded="false" />
-            <element signature="e#1245#1272#1#PHP" expanded="true" />
-            <element signature="e#1527#3862#0#PHP" expanded="false" />
-            <element signature="e#3867#4436#0#PHP" expanded="false" />
-            <element signature="e#4176#4203#1#PHP" expanded="true" />
-            <element signature="e#4441#7395#0#PHP" expanded="false" />
-            <element signature="e#5732#5759#1#PHP" expanded="true" />
-            <element signature="e#7400#9195#0#PHP" expanded="false" />
-            <element signature="e#8075#8102#1#PHP" expanded="true" />
-            <element signature="e#9200#9731#0#PHP" expanded="false" />
-            <element signature="e#9736#10298#0#PHP" expanded="false" />
-            <element signature="e#10303#11255#0#PHP" expanded="false" />
-            <element signature="e#10953#10980#1#PHP" expanded="true" />
+            <element signature="e#524#574#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Controller/ProduitController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="182" column="12" selection-start-line="182" selection-start-column="12" selection-end-line="182" selection-end-column="12" />
+          <folding>
+            <element signature="e#285#618#0#PHP" expanded="false" />
+            <element signature="e#623#1177#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="70" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="70" />
+          <folding>
+            <element signature="e#12#45#0#Twig" expanded="false" />
+            <element signature="e#2359#2385#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="16" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-383">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulterListe.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="94" column="0" selection-start-line="36" selection-start-column="4" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="e#13#46#0#Twig" expanded="false" />
+            <element signature="e#751#785#0#Twig" expanded="false" />
+            <element signature="e#1199#1224#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="134" selection-start-line="13" selection-start-column="134" selection-end-line="13" selection-end-column="134" />
+          <folding>
+            <element signature="e#12#45#0#Twig" expanded="false" />
+            <element signature="e#630#657#0#Twig" expanded="false" />
+            <element signature="e#788#814#0#Twig" expanded="false" />
+            <element signature="e#961#988#0#Twig" expanded="false" />
+            <element signature="e#1220#2581#0#HTML" expanded="false" />
+            <marker date="1490121747389" expanded="true" signature="133:2724" ph="{% block gsbobjcom_body ...%}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/modifier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+          <folding>
+            <element signature="e#12#45#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Suivi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="79" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Categorie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Entity/Pharmacie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2059">
+          <caret line="154" column="7" selection-start-line="154" selection-start-column="7" selection-end-line="154" selection-end-column="7" />
+          <folding>
+            <element signature="e#43#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/formulaire.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding>
+            <element signature="e#2206#2233#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1133,60 +1111,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/modifier.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Controller/PharmacieController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/formulaire.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+        <state relative-caret-position="404">
+          <caret line="171" column="16" selection-start-line="171" selection-start-column="16" selection-end-line="171" selection-end-column="16" />
           <folding>
-            <element signature="e#1369#1396#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulter.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="157" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="157" />
-          <folding>
-            <element signature="e#967#1000#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/supprimer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="95" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Pharmacie/consulterListe.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="30" />
-          <folding>
-            <element signature="e#750#784#0#Twig" expanded="true" />
-            <element signature="e#1198#1223#0#Twig" expanded="true" />
-            <element signature="e#1386#1419#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GSB/ObjComBundle/Resources/views/Produit/consulterListe.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="e#908#940#0#Twig" expanded="true" />
+            <element signature="e#47#104#0#PHP" expanded="true" />
+            <element signature="e#432#1166#0#PHP" expanded="false" />
+            <element signature="e#1171#1641#0#PHP" expanded="false" />
+            <element signature="e#6643#6666#1#PHP" expanded="true" />
+            <element signature="e#8357#10152#0#PHP" expanded="false" />
+            <element signature="e#10157#10688#0#PHP" expanded="false" />
+            <element signature="e#10693#11255#0#PHP" expanded="false" />
+            <element signature="e#11260#12212#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
